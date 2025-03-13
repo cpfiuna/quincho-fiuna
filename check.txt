@@ -1,0 +1,30 @@
+
+## Environment Variables Setup
+
+This application requires the following environment variables to be set:
+
+### Supabase Configuration
+- VITE_SUPABASE_URL: Supabase project URL
+- VITE_SUPABASE_ANON_KEY: Supabase anonymous key for client-side access
+
+### Email Service (for production)
+- EMAIL_SERVICE_API_KEY: API key for the email service
+- EMAIL_SENDER: Email address used as the sender
+
+### Application Settings
+- APP_URL: URL where the application is hosted (defaults to https://quincho.fiuna.edu.py)
+- TIMEZONE: Application timezone (defaults to America/Asuncion)
+
+## Development Setup
+
+1. Create a `.env` file in the project root with the required variables
+2. For local development, you can use the Supabase configuration from secrets.txt
+3. For production, replace all placeholder values with actual production credentials
+
+## Important Notes
+
+- Never commit actual API keys or secrets to the repository
+- In production, set all environment variables through the hosting platform
+- For testing purposes, the test admin account is:
+  - Email: test@email.com
+  - Password: test123
